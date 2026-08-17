@@ -3,16 +3,16 @@ package org.example.sftpclient.service;
 import org.example.sftpclient.exception.SFTPClientException;
 import org.example.sftpclient.model.DomainEntry;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class DomainEntryService {
 
     private final Map<String, String> domainToIpMap = new HashMap<>();
     private final Map<String, String> ipToDomainMap = new HashMap<>();
     private final Map<String, String> domainToIpTreeMap = new TreeMap<>();
+    private static final String IP_PATTERN =
+            "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}" +
+                    "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$";
 
     public void init(List<DomainEntry> entryList) {
 
@@ -24,12 +24,20 @@ public class DomainEntryService {
 
     }
 
-    public Map<String, String> getAllEntriesSorted() {
-        return this.domainToIpTreeMap;
+    public List<DomainEntry> getAllEntriesSorted() {
+        List<DomainEntry> entryList = new ArrayList<>();
+        for (Map.Entry<String, String> entry: domainToIpTreeMap.entrySet()) {
+            entryList.add(new DomainEntry(entry.getKey(), entry.getValue()));
+        }
+        return entryList;
+
     }
 
     public void addEntry(DomainEntry entry) {
 
+        if (!entry.getIp().matches(IP_PATTERN)) {
+            throw new SFTPClientException("The input ip: " + entry.getIp() + " is not a valid ip address");
+        }
         if (domainToIpMap.containsKey(entry.getDomain())) {
             throw new SFTPClientException("Can not add an already existing domain to the file");
         }

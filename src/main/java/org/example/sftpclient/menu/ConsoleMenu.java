@@ -26,11 +26,13 @@ public class ConsoleMenu {
             String input = scanner.nextLine();
             try {
                 running = handleCommand(input);
+                if (running) System.out.println("Choose a new operation: ");
             } catch (SFTPClientException e) {
-                System.out.println(e.getMessage() + "\n Choose a new operation");
+                System.out.println(e.getMessage() + "\nChoose a new operation: " + "\n");
             }
 
         }
+        System.out.println("Exiting the application...");
 
     }
 
@@ -58,19 +60,19 @@ public class ConsoleMenu {
                 return true;
             }
             case "1": {
-                System.out.println(domainEntryService.getAllEntriesSorted());
+                System.out.println(domainEntryService.getAllEntriesSorted() + "\n");
                 return true;
             }
             case "2": {
                 System.out.println("Finding a domain-ip pair. Input an ip: ");
                 String ip = scanner.nextLine();
-                System.out.println(domainEntryService.findByIp(ip));
+                System.out.println(domainEntryService.findByIp(ip) + "\n");
                 return true;
             }
             case "3": {
                 System.out.println("Finding a domain-ip pair. Input a domain: ");
                 String domain = scanner.nextLine();
-                System.out.println(domainEntryService.findByDomain(domain));
+                System.out.println(domainEntryService.findByDomain(domain) + "\n");
                 return true;
             }
             case "4": {
@@ -81,21 +83,21 @@ public class ConsoleMenu {
                 }
                 DomainEntry domainEntry = new DomainEntry(entry[0], entry[1]);
                 domainEntryService.addEntry(domainEntry);
-                System.out.println("Successfully added a domain-ip pair: " + domainEntry);
+                System.out.println("Successfully added a domain-ip pair: " + domainEntry + "\n");
                 return true;
             }
             case "5": {
                 System.out.println("Deleting an domain-ip pair. Input an ip: ");
                 String ip = scanner.nextLine();
                 domainEntryService.deleteByIp(ip);
-                System.out.println("Successfully deleted an domain-ip pair with ip: " + ip);
+                System.out.println("Successfully deleted an domain-ip pair with ip: " + ip + "\n");
                 return true;
             }
             case "6": {
                 System.out.println("Deleting an domain-ip pair. Input a domain");
                 String domain = scanner.nextLine();
                 domainEntryService.deleteByDomain(domain);
-                System.out.println("Successfully deleted an domain-ip pair with domain: " + domain);
+                System.out.println("Successfully deleted an domain-ip pair with domain: " + domain + "\n");
                 return true;
             }
             default: {

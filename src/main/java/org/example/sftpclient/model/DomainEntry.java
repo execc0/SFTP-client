@@ -20,7 +20,7 @@ public class DomainEntry {
 
     @Override
     public String toString() {
-        return "domain: " + "\"" + getDomain() + "\"" + " ip: " + getIp();
+        return "domain: " + "\"" + getDomain() + "\"" + " ip: " + "\""+ getIp() + "\"";
     }
 
 }

@@ -27,7 +27,7 @@ public class Main {
             String json = connector.readFile("upload/addresses.json");
             List<DomainEntry> entryList = jsonParser.parseDomainEntries(json);
             domainEntryService.init(entryList);
-            System.out.println("Successfully connected to a server and extracted the file");
+            System.out.println("Successfully connected to the server and extracted the file");
 
             ConsoleMenu menu = new ConsoleMenu(sc, domainEntryService);
 
