@@ -1,7 +1,11 @@
 package org.example.sftpclient;
 
+import org.example.sftpclient.json.MinimalJsonParser;
+import org.example.sftpclient.model.DomainEntry;
 import org.example.sftpclient.sftp.SftpConfiguration;
 import org.example.sftpclient.sftp.SftpConnector;
+
+import java.util.List;
 
 
 public class Main {
@@ -11,16 +15,22 @@ public class Main {
 
         SftpConnector connector = new SftpConnector(configuration);
 
+        MinimalJsonParser jsonParser = new MinimalJsonParser();
+
         try {
 
             connector.connect();
 
-            String file = connector.readFile("upload/addresses.json");
+            String json = connector.readFile("upload/addresses.json");
 
-            System.out.println(file);
+            System.out.println(json);
+
+            List<DomainEntry> entryList = jsonParser.parseDomainEntries(json);
+
+            System.out.println(entryList);
 
         } catch (Exception e) {
-            System.err.println("Exception occurred: " + e.getMessage());
+            System.err.println("Exception occurred: " + e + e.getMessage());
         } finally {
             connector.disconnect();
         }
