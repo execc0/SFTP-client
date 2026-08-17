@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.jcraft:jsch:0.1.55'
+    testImplementation 'org.testng:testng:7.5'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.sftpclient.Main'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+test {
+    useJUnitPlatform()
+}

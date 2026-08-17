@@ -1,0 +1,10 @@
+services:
+  sftp:
+    image: atmoz/sftp:latest
+    container_name: sftp-server
+    ports:
+      - "127.0.0.1:2222:22"
+    volumes:
+      - ./sftp_data/addresses:/home/sftpuser/upload
+    command: sftpuser:password:1001:100:upload
+    restart: unless-stopped
