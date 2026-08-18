@@ -18,9 +18,7 @@ public class SftpConnector {
         this.config = config;
     }
 
-    /**
-     * Устанавливает соединение с SFTP-сервером.
-     */
+
     public void connect() {
 
         try {
@@ -43,9 +41,7 @@ public class SftpConnector {
         }
     }
 
-    /**
-     * Читает содержимое файла с сервера и возвращает его как строку.
-     */
+
     public String readFile() {
         try (InputStream in = channel.get(pathToFile);
              ByteArrayOutputStream out = new ByteArrayOutputStream()) {
@@ -63,9 +59,7 @@ public class SftpConnector {
         }
     }
 
-    /**
-     * Записывает строку в файл на сервере (перезаписывает целиком).
-     */
+
     public void writeFile(String content)  {
         try (InputStream in = new ByteArrayInputStream(content.getBytes())) {
             channel.put(in, pathToFile, ChannelSftp.OVERWRITE);

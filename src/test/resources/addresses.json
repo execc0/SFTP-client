@@ -1,0 +1,20 @@
+{
+  "addresses": [
+    {
+      "domain": "another.domain",
+      "ip": "123.123.65.12"
+    },
+    {
+      "domain": "first.domain",
+      "ip": "192.168.0.1"
+    },
+    {
+      "domain": "second.domain",
+      "ip": "192.168.0.2"
+    },
+    {
+      "domain": "third.domain",
+      "ip": "192.168.0.3"
+    }
+  ]
+}
