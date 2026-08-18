@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d37c0b2-fa47-46a4-9ad9-87b67f220676" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_tests/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_tests/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/exception/SFTPClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/exception/SFTPClientException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/json/MinimalJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/json/MinimalJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/json/MinimalJsonWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/json/MinimalJsonWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/menu/ConsoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/menu/ConsoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/model/DomainEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/model/DomainEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/service/DomainEntryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/service/DomainEntryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/sftp/SftpConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/sftp/SftpConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/sftp/SftpConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/sftp/SftpConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sftpclient/validator/IPValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/sftpclient/validator/IPValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sftpclient/json/MinimalJsonParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client_tests/src/test/java/org/example/sftpclient/json/MinimalJsonParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sftpclient/json/MinimalJsonRoundTripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client_tests/src/test/java/org/example/sftpclient/json/MinimalJsonRoundTripTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sftpclient/json/MinimalJsonWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client_tests/src/test/java/org/example/sftpclient/json/MinimalJsonWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sftpclient/service/DomainEntryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client_tests/src/test/java/org/example/sftpclient/service/DomainEntryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sftpclient/validator/IPValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client_tests/src/test/java/org/example/sftpclient/validator/IPValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/addresses.json" beforeDir="false" afterPath="$PROJECT_DIR$/client_tests/src/test/resources/addresses.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SFTP_client" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3I3WhC01CqSpyBb3hZzlD9mCXQS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.DomainEntryServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.IPValidatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MinimalJsonParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MinimalJsonRoundTripTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MinimalJsonWriterTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SFTP_client [:org.example.sftpclient.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SFTP_client [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SFTP_client [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'SFTP_client.test'.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/IdeaProjects/SFTP_client/sftp_data/addresses&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/SFTP_client/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\SFTP_client\sftp_data\addresses" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\SFTP_client\client_tests\src" />
+      <recent name="C:\Users\admin\IdeaProjects\SFTP_client\client" />
+      <recent name="C:\Users\admin\IdeaProjects\SFTP_client\client_tests" />
+      <recent name="C:\Users\admin\IdeaProjects\SFTP_client\sftp_data" />
+      <recent name="C:\Users\admin\IdeaProjects\SFTP_client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'SFTP_client.test'">
+    <configuration name="IPValidatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.sftpclient.validator.IPValidatorTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MinimalJsonParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.sftpclient.json.MinimalJsonParserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MinimalJsonRoundTripTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.sftpclient.json.MinimalJsonRoundTripTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MinimalJsonWriterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.sftpclient.json.MinimalJsonWriterTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'SFTP_client.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'SFTP_client.test'" />
+        <item itemvalue="Gradle.MinimalJsonRoundTripTest" />
+        <item itemvalue="Gradle.MinimalJsonWriterTest" />
+        <item itemvalue="Gradle.MinimalJsonParserTest" />
+        <item itemvalue="Gradle.IPValidatorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d37c0b2-fa47-46a4-9ad9-87b67f220676" name="Changes" comment="" />
+      <created>1786993852549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786993852549</updated>
+      <workItem from="1786993853774" duration="1036000" />
+      <workItem from="1786994906583" duration="2105000" />
+      <workItem from="1786997148761" duration="1152000" />
+      <workItem from="1786998325926" duration="672000" />
+      <workItem from="1786999013439" duration="2118000" />
+      <workItem from="1787002199925" duration="9271000" />
+      <workItem from="1787011558055" duration="1947000" />
+      <workItem from="1787013978984" duration="13000" />
+      <workItem from="1787014049556" duration="1019000" />
+      <workItem from="1787015087775" duration="236000" />
+      <workItem from="1787018193925" duration="3605000" />
+      <workItem from="1787029321961" duration="533000" />
+      <workItem from="1787029872264" duration="355000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,1 +1,2 @@
 rootProject.name = 'SFTP_client'
+include 'client', 'client_tests'

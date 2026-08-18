@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 java {
@@ -8,15 +9,12 @@ java {
     }
 }
 
-group = 'org.example'
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation 'com.jcraft:jsch:0.1.55'
-    testImplementation 'org.testng:testng:7.5'
 }
 
 jar {
@@ -27,8 +25,4 @@ jar {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-test {
-    useTestNG()
 }

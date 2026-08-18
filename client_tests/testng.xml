@@ -1,0 +1,11 @@
+<suite name="SftpClientTestSuite">
+    <test name="UnitTests">
+        <classes>
+            <class name="org.example.sftpclient.service.DomainEntryServiceTest"/>
+            <class name="org.example.sftpclient.json.MinimalJsonParserTest"/>
+            <class name="org.example.sftpclient.json.MinimalJsonWriterTest"/>
+            <class name="org.example.sftpclient.json.MinimalJsonRoundTripTest"/>
+            <class name="org.example.sftpclient.validator.IPValidatorTest"/>
+        </classes>
+    </test>
+</suite>
