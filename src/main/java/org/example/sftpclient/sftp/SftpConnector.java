@@ -21,27 +21,32 @@ public class SftpConnector {
     /**
      * Устанавливает соединение с SFTP-сервером.
      */
-    public void connect() throws JSchException {
-        JSch jsch = new JSch();
+    public void connect() {
 
-        session = jsch.getSession(config.getUsername(), config.getAddress(), config.getPort());
-        session.setPassword(config.getPassword());
+        try {
+            JSch jsch = new JSch();
 
-        Properties properties = new Properties();
-        properties.put("StrictHostKeyChecking", "no");
-        session.setConfig(properties);
+            session = jsch.getSession(config.getUsername(), config.getAddress(), config.getPort());
+            session.setPassword(config.getPassword());
 
-        session.connect(10000); // 10 сек
+            Properties properties = new Properties();
+            properties.put("StrictHostKeyChecking", "no");
+            session.setConfig(properties);
 
-        Channel rawChannel = session.openChannel("sftp");
-        rawChannel.connect(10000);
-        channel = (ChannelSftp) rawChannel;
+            session.connect(10000); // 10 сек
+
+            Channel rawChannel = session.openChannel("sftp");
+            rawChannel.connect(10000);
+            channel = (ChannelSftp) rawChannel;
+        } catch (JSchException e) {
+            throw new SFTPClientException("The attempt to establish a connection has failed: " + e.getMessage());
+        }
     }
 
     /**
      * Читает содержимое файла с сервера и возвращает его как строку.
      */
-    public String readFile() throws SftpException, IOException {
+    public String readFile() {
         try (InputStream in = channel.get(pathToFile);
              ByteArrayOutputStream out = new ByteArrayOutputStream()) {
 
@@ -53,6 +58,8 @@ public class SftpConnector {
                 out.write(buffer, 0, bytesRead);
             }
             return out.toString("UTF-8");
+        } catch (Exception e) {
+            throw new SFTPClientException("An exception has occurred during a file read: " + e.getMessage());
         }
     }
 

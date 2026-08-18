@@ -19,6 +19,10 @@ public class Main {
 
         final String filePath = "upload/addresses.json";
 
+        if (args.length != 4) {
+            System.out.println();
+        }
+
         SftpConfiguration configuration = new SftpConfiguration(args[0], Integer.parseInt(args[1]), args[2], args[3]);
         SftpConnector connector = new SftpConnector(filePath, configuration);
         MinimalJsonParser jsonParser = new MinimalJsonParser();
