@@ -40,6 +40,9 @@ public class DomainEntryService {
 
     public void addEntry(DomainEntry entry) {
 
+        if (entry == null || entry.getDomain() == null || entry.getDomain().isEmpty()) {
+            throw new SFTPClientException("The domain is null or empty");
+        }
         if (!ipValidator.isValidIp(entry.getIp())) {
             throw new SFTPClientException("The input ip: " + entry.getIp() + " is not a valid ip address");
         }

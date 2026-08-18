@@ -74,19 +74,19 @@ public class ConsoleMenu {
             }
             case "2": {
                 System.out.println("Finding a domain-ip pair. Input an ip: ");
-                String ip = scanner.nextLine();
+                String ip = getInput();
                 System.out.println(domainEntryService.findByIp(ip) + "\n");
                 return true;
             }
             case "3": {
                 System.out.println("Finding a domain-ip pair. Input a domain: ");
-                String domain = scanner.nextLine();
+                String domain = getInput();
                 System.out.println(domainEntryService.findByDomain(domain) + "\n");
                 return true;
             }
             case "4": {
                 System.out.println("Adding a domain-ip pair. Input a domain-ip pair in the format: <domain> <ip>");
-                String[] entry = scanner.nextLine().split(" ");
+                String[] entry = getInput().split(" ");
                 if (entry.length != 2) {
                     throw new SFTPClientException("Invalid amount of arguments passed. The expected amount is 2");
                 }
@@ -97,14 +97,14 @@ public class ConsoleMenu {
             }
             case "5": {
                 System.out.println("Deleting an domain-ip pair. Input an ip: ");
-                String ip = scanner.nextLine();
+                String ip = getInput();
                 domainEntryService.deleteByIp(ip);
                 System.out.println("Successfully deleted an domain-ip pair with ip: " + ip + "\n");
                 return true;
             }
             case "6": {
                 System.out.println("Deleting an domain-ip pair. Input a domain");
-                String domain = scanner.nextLine();
+                String domain = getInput();
                 domainEntryService.deleteByDomain(domain);
                 System.out.println("Successfully deleted an domain-ip pair with domain: " + domain + "\n");
                 return true;
@@ -122,6 +122,14 @@ public class ConsoleMenu {
             }
         }
 
+    }
+
+    private String getInput() {
+        String input = scanner.nextLine();
+        if (input == null || input.isEmpty()) {
+            throw new SFTPClientException("The input string is empty");
+        }
+        return input;
     }
 
 

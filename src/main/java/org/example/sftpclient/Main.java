@@ -20,7 +20,7 @@ public class Main {
         final String filePath = "upload/addresses.json";
 
         if (args.length != 4) {
-            System.out.println();
+            System.out.println("A wrong number of arguments was passed. The expected number is 4");
         }
 
         SftpConfiguration configuration = new SftpConfiguration(args[0], Integer.parseInt(args[1]), args[2], args[3]);

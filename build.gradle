@@ -2,6 +2,12 @@ plugins {
     id 'java'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
 group = 'org.example'
 
 repositories {
@@ -24,5 +30,5 @@ jar {
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
