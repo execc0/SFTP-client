@@ -1,10 +1,6 @@
 {
   "addresses": [
     {
-      "domain": "another.domain",
-      "ip": "123.123.65.12"
-    },
-    {
       "domain": "first.domain",
       "ip": "192.168.0.1"
     },

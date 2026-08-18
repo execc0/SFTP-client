@@ -1,17 +1,20 @@
 package org.example.sftpclient.sftp;
 
 import com.jcraft.jsch.*;
+import org.example.sftpclient.exception.SFTPClientException;
 
 import java.io.*;
 import java.util.Properties;
 
 public class SftpConnector {
 
+    private final String pathToFile;
     private final SftpConfiguration config;
     private Session session;
     private ChannelSftp channel;
 
-    public SftpConnector(SftpConfiguration config) {
+    public SftpConnector(String pathToFile, SftpConfiguration config) {
+        this.pathToFile = pathToFile;
         this.config = config;
     }
 
@@ -38,8 +41,8 @@ public class SftpConnector {
     /**
      * Читает содержимое файла с сервера и возвращает его как строку.
      */
-    public String readFile(String remotePath) throws SftpException, IOException {
-        try (InputStream in = channel.get(remotePath);
+    public String readFile() throws SftpException, IOException {
+        try (InputStream in = channel.get(pathToFile);
              ByteArrayOutputStream out = new ByteArrayOutputStream()) {
 
             byte[] buffer = new byte[1024];
@@ -56,17 +59,15 @@ public class SftpConnector {
     /**
      * Записывает строку в файл на сервере (перезаписывает целиком).
      */
-    public void writeFile(String remotePath, String content) throws SftpException {
+    public void writeFile(String content)  {
         try (InputStream in = new ByteArrayInputStream(content.getBytes())) {
-            channel.put(in, remotePath, ChannelSftp.OVERWRITE);
-        } catch (IOException e) {
-            throw new SftpException(0, "Ошибка записи файла: " + e.getMessage(), e);
+            channel.put(in, pathToFile, ChannelSftp.OVERWRITE);
+        } catch (Exception e) {
+            throw new SFTPClientException("An error has occurred during the saving of a file: " + e.getMessage());
         }
     }
 
-    /**
-     * Закрывает соединение.
-     */
+
     public void disconnect() {
         if (channel != null && channel.isConnected()) {
             channel.disconnect();

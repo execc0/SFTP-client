@@ -1,17 +1,24 @@
 package org.example.sftpclient.menu;
 
 import org.example.sftpclient.exception.SFTPClientException;
+import org.example.sftpclient.json.MinimalJsonWriter;
 import org.example.sftpclient.model.DomainEntry;
 import org.example.sftpclient.service.DomainEntryService;
+import org.example.sftpclient.sftp.SftpConnector;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleMenu {
 
+    private final SftpConnector sftpConnector;
+    private final MinimalJsonWriter minimalJsonWriter;
     private final DomainEntryService domainEntryService;
     private final Scanner scanner;
 
-    public ConsoleMenu(Scanner scanner, DomainEntryService domainEntryService) {
+    public ConsoleMenu(SftpConnector sftpConnector, MinimalJsonWriter minimalJsonWriter, Scanner scanner, DomainEntryService domainEntryService) {
+        this.sftpConnector = sftpConnector;
+        this.minimalJsonWriter = minimalJsonWriter;
         this.domainEntryService = domainEntryService;
         this.scanner = scanner;
     }
@@ -19,6 +26,7 @@ public class ConsoleMenu {
     public void run() {
 
         printMenu();
+        System.out.println("Remember to save the changes before exiting the application!");
 
         boolean running = true;
         while (running) {
@@ -46,10 +54,11 @@ public class ConsoleMenu {
                 "4 - Add a domain-ip pair \n" +
                 "5 - Delete a domain-ip pair by ip \n" +
                 "6 - Delete a domain-ip pair by domain \n" +
+                "7 - Save changes \n" +
                 "0 - Print this message \n" +
                 "Any other key to exit the application \n" +
                 "***************************************\n";
-        System.out.println(message);
+        System.out.print(message);
 
     }
 
@@ -100,13 +109,20 @@ public class ConsoleMenu {
                 System.out.println("Successfully deleted an domain-ip pair with domain: " + domain + "\n");
                 return true;
             }
+            case "7": {
+                System.out.println("Saving changes...");
+                List<DomainEntry> entryList = domainEntryService.getAllEntriesSorted();
+                String json = minimalJsonWriter.writeJson(entryList);
+                sftpConnector.writeFile(json);
+                System.out.println("Successfully saved the changes. You can exit the application safely now");
+                return true;
+            }
             default: {
                 return false;
             }
         }
 
     }
-
 
 
 }
