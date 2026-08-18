@@ -2,6 +2,8 @@ package org.example.sftpclient.service;
 
 import org.example.sftpclient.exception.SFTPClientException;
 import org.example.sftpclient.model.DomainEntry;
+import org.example.sftpclient.validator.IPValidator;
+
 
 import java.util.*;
 
@@ -10,9 +12,12 @@ public class DomainEntryService {
     private final Map<String, String> domainToIpMap = new HashMap<>();
     private final Map<String, String> ipToDomainMap = new HashMap<>();
     private final Map<String, String> domainToIpTreeMap = new TreeMap<>();
-    private static final String IP_PATTERN =
-            "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}" +
-                    "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$";
+    private final IPValidator ipValidator;
+
+
+    public DomainEntryService(IPValidator ipValidator) {
+        this.ipValidator = ipValidator;
+    }
 
     public void init(List<DomainEntry> entryList) {
 
@@ -35,7 +40,7 @@ public class DomainEntryService {
 
     public void addEntry(DomainEntry entry) {
 
-        if (!entry.getIp().matches(IP_PATTERN)) {
+        if (!ipValidator.isValidIp(entry.getIp())) {
             throw new SFTPClientException("The input ip: " + entry.getIp() + " is not a valid ip address");
         }
         if (domainToIpMap.containsKey(entry.getDomain())) {
@@ -81,6 +86,5 @@ public class DomainEntryService {
         domainToIpTreeMap.remove(domain);
 
     }
-
 
 }

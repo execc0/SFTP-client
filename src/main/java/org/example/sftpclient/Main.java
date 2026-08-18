@@ -1,6 +1,5 @@
 package org.example.sftpclient;
 
-import org.example.sftpclient.exception.SFTPClientException;
 import org.example.sftpclient.json.MinimalJsonParser;
 import org.example.sftpclient.json.MinimalJsonWriter;
 import org.example.sftpclient.menu.ConsoleMenu;
@@ -8,6 +7,7 @@ import org.example.sftpclient.model.DomainEntry;
 import org.example.sftpclient.service.DomainEntryService;
 import org.example.sftpclient.sftp.SftpConfiguration;
 import org.example.sftpclient.sftp.SftpConnector;
+import org.example.sftpclient.validator.IPValidator;
 
 import java.util.List;
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class Main {
         SftpConnector connector = new SftpConnector(filePath, configuration);
         MinimalJsonParser jsonParser = new MinimalJsonParser();
         MinimalJsonWriter jsonWriter = new MinimalJsonWriter();
-        DomainEntryService domainEntryService = new DomainEntryService();
+        DomainEntryService domainEntryService = new DomainEntryService(new IPValidator());
 
         try (Scanner sc = new Scanner(System.in)) {
 
