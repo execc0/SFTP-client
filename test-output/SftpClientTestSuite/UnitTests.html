@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>TestNG:  UnitTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UnitTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 20 23:14:12 CEST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (232 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByIpEntry()'><b>shouldDeleteByIpEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fifth.domain" ip: "255.255.255.255"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenAddingSameDomain()'><b>shouldThrowWhenAddingSameDomain</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: first.domain</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.json.MinimalJsonParserTest.shouldParseValidJsonIntoEntries()'><b>shouldParseValidJsonIntoEntries</b><br>Test class: org.example.sftpclient.json.MinimalJsonParserTest</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.json.MinimalJsonParserTest@2ef5e5e3</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenIPIsInvalid()'><b>shouldThrowWhenIPIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "third.domain" ip: "null"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenIPIsInvalid()'><b>shouldThrowWhenIPIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fourth.domain" ip: "0...0..0"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenDomainIsInvalid()'><b>shouldThrowWhenDomainIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "null" ip: "192.168.0.2"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenIPIsInvalid()'><b>shouldThrowWhenIPIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "first.domain" ip: "01.1.1.001"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldAddAValidEntry()'><b>shouldAddAValidEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fifth.domain" ip: "255.255.255.255"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnFalseForInvalidIPs()'><b>shouldReturnFalseForInvalidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: .0.0.0.0</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenDomainIsInvalid()'><b>shouldThrowWhenDomainIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "" ip: "192.168.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.json.MinimalJsonWriterTest.shouldWriteAValidJson()'><b>shouldWriteAValidJson</b><br>Test class: org.example.sftpclient.json.MinimalJsonWriterTest</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.json.MinimalJsonWriterTest@51efea79</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenIPIsInvalid()'><b>shouldThrowWhenIPIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "second.domain" ip: "256.255.255.255"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByDomainEntry()'><b>shouldDeleteByDomainEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fifth.domain" ip: "255.255.255.255"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldAddAValidEntry()'><b>shouldAddAValidEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "third.domain" ip: "10.0.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldAddAValidEntry()'><b>shouldAddAValidEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "second.domain" ip: "192.168.0.2"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnTrueForValidIPs()'><b>shouldReturnTrueForValidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 255.255.255.255</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenIPIsInvalid()'><b>shouldThrowWhenIPIsInvalid</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fifth.domain" ip: ""</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnFalseForInvalidIPs()'><b>shouldReturnFalseForInvalidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.json.MinimalJsonRoundTripTest.shouldDoTheRoundTrip()'><b>shouldDoTheRoundTrip</b><br>Test class: org.example.sftpclient.json.MinimalJsonRoundTripTest</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.json.MinimalJsonRoundTripTest@5034c75a</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByDomainEntry()'><b>shouldDeleteByDomainEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "third.domain" ip: "10.0.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldAddAValidEntry()'><b>shouldAddAValidEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fourth.domain" ip: "0.0.0.0"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByIpEntry()'><b>shouldDeleteByIpEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "third.domain" ip: "10.0.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenAddingSameDomain()'><b>shouldThrowWhenAddingSameDomain</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: second.domain</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenAddingSameIP()'><b>shouldThrowWhenAddingSameIP</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: 0.0.0.0</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByIpEntry()'><b>shouldDeleteByIpEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fourth.domain" ip: "0.0.0.0"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnTrueForValidIPs()'><b>shouldReturnTrueForValidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 192.168.0.1</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByDomainEntry()'><b>shouldDeleteByDomainEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "second.domain" ip: "192.168.0.2"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnTrueForValidIPs()'><b>shouldReturnTrueForValidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 255.254.254.255</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByDomainEntry()'><b>shouldDeleteByDomainEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "first.domain" ip: "192.168.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenAddingSameIP()'><b>shouldThrowWhenAddingSameIP</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: 192.168.0.1</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByDomainEntry()'><b>shouldDeleteByDomainEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "fourth.domain" ip: "0.0.0.0"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldReturnSortedEntries()'><b>shouldReturnSortedEntries</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: [domain: "third.domain" ip: "192.168.0.3", domain: "first.domain" ip: "192.168.0.1", domain: "second.domain" ip: "192.168.0.2"], [domain: "first.domain" ip: "192.168.0.1", domain: "second.domain" ip: "192.168.0.2", domain: "third.domain" ip: "192.168.0.3"]</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnTrueForValidIPs()'><b>shouldReturnTrueForValidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 139.94.64.95</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByIpEntry()'><b>shouldDeleteByIpEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "first.domain" ip: "192.168.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldDeleteByIpEntry()'><b>shouldDeleteByIpEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "second.domain" ip: "192.168.0.2"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenAddingSameIP()'><b>shouldThrowWhenAddingSameIP</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: 255.255.255.255</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldThrowWhenAddingSameDomain()'><b>shouldThrowWhenAddingSameDomain</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: third.notadomain</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnFalseForInvalidIPs()'><b>shouldReturnFalseForInvalidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 256.0.0.0</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnTrueForValidIPs()'><b>shouldReturnTrueForValidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 0.0.0.0</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnFalseForInvalidIPs()'><b>shouldReturnFalseForInvalidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: 0..0.0.0</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnFalseForInvalidIPs()'><b>shouldReturnFalseForInvalidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: null</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.validator.IPValidatorTest.shouldReturnFalseForInvalidIPs()'><b>shouldReturnFalseForInvalidIPs</b><br>Test class: org.example.sftpclient.validator.IPValidatorTest<br>Parameters: in.va.li.d</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.validator.IPValidatorTest@396a51ab</td></tr>
+<tr>
+<td title='org.example.sftpclient.service.DomainEntryServiceTest.shouldAddAValidEntry()'><b>shouldAddAValidEntry</b><br>Test class: org.example.sftpclient.service.DomainEntryServiceTest<br>Parameters: domain: "first.domain" ip: "192.168.0.1"</td>
+<td></td>
+<td>0</td>
+<td>org.example.sftpclient.service.DomainEntryServiceTest@26f67b76</td></tr>
+</table><p>
+</body>
+</html>

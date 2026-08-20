@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="43" passed="43">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SftpClientTestSuite" duration-ms="232" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+    <groups>
+    </groups>
+    <test name="UnitTests" duration-ms="232" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+      <class name="org.example.sftpclient.json.MinimalJsonRoundTripTest">
+        <test-method status="PASS" signature="shouldDoTheRoundTrip()[pri:0, instance:org.example.sftpclient.json.MinimalJsonRoundTripTest@5034c75a]" name="shouldDoTheRoundTrip" duration-ms="2" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDoTheRoundTrip -->
+      </class> <!-- org.example.sftpclient.json.MinimalJsonRoundTripTest -->
+      <class name="org.example.sftpclient.validator.IPValidatorTest">
+        <test-method status="PASS" signature="shouldReturnFalseForInvalidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnFalseForInvalidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[256.0.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnFalseForInvalidIPs -->
+        <test-method status="PASS" signature="shouldReturnFalseForInvalidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnFalseForInvalidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[.0.0.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnFalseForInvalidIPs -->
+        <test-method status="PASS" signature="shouldReturnFalseForInvalidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnFalseForInvalidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0..0.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnFalseForInvalidIPs -->
+        <test-method status="PASS" signature="shouldReturnFalseForInvalidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnFalseForInvalidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[in.va.li.d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnFalseForInvalidIPs -->
+        <test-method status="PASS" signature="shouldReturnFalseForInvalidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnFalseForInvalidIPs" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnFalseForInvalidIPs -->
+        <test-method status="PASS" signature="shouldReturnFalseForInvalidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnFalseForInvalidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnFalseForInvalidIPs -->
+        <test-method status="PASS" signature="shouldReturnTrueForValidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnTrueForValidIPs" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[192.168.0.1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnTrueForValidIPs -->
+        <test-method status="PASS" signature="shouldReturnTrueForValidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnTrueForValidIPs" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[255.255.255.255]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnTrueForValidIPs -->
+        <test-method status="PASS" signature="shouldReturnTrueForValidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnTrueForValidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnTrueForValidIPs -->
+        <test-method status="PASS" signature="shouldReturnTrueForValidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnTrueForValidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[255.254.254.255]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnTrueForValidIPs -->
+        <test-method status="PASS" signature="shouldReturnTrueForValidIPs(java.lang.String)[pri:0, instance:org.example.sftpclient.validator.IPValidatorTest@396a51ab]" name="shouldReturnTrueForValidIPs" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[139.94.64.95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnTrueForValidIPs -->
+      </class> <!-- org.example.sftpclient.validator.IPValidatorTest -->
+      <class name="org.example.sftpclient.json.MinimalJsonWriterTest">
+        <test-method status="PASS" signature="shouldWriteAValidJson()[pri:0, instance:org.example.sftpclient.json.MinimalJsonWriterTest@51efea79]" name="shouldWriteAValidJson" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldWriteAValidJson -->
+      </class> <!-- org.example.sftpclient.json.MinimalJsonWriterTest -->
+      <class name="org.example.sftpclient.json.MinimalJsonParserTest">
+        <test-method status="PASS" signature="shouldParseValidJsonIntoEntries()[pri:0, instance:org.example.sftpclient.json.MinimalJsonParserTest@2ef5e5e3]" name="shouldParseValidJsonIntoEntries" duration-ms="7" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldParseValidJsonIntoEntries -->
+      </class> <!-- org.example.sftpclient.json.MinimalJsonParserTest -->
+      <class name="org.example.sftpclient.service.DomainEntryServiceTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="10" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldAddAValidEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldAddAValidEntry" duration-ms="6" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fourth.domain" ip: "0.0.0.0"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddAValidEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldAddAValidEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldAddAValidEntry" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "first.domain" ip: "192.168.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddAValidEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldAddAValidEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldAddAValidEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "second.domain" ip: "192.168.0.2"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddAValidEntry -->
+        <test-method status="PASS" signature="shouldAddAValidEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldAddAValidEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "third.domain" ip: "10.0.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddAValidEntry -->
+        <test-method status="PASS" signature="shouldAddAValidEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldAddAValidEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fifth.domain" ip: "255.255.255.255"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddAValidEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByDomainEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByDomainEntry" duration-ms="3" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fourth.domain" ip: "0.0.0.0"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByDomainEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByDomainEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByDomainEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "first.domain" ip: "192.168.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByDomainEntry -->
+        <test-method status="PASS" signature="shouldDeleteByDomainEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByDomainEntry" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "second.domain" ip: "192.168.0.2"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByDomainEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByDomainEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByDomainEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "third.domain" ip: "10.0.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByDomainEntry -->
+        <test-method status="PASS" signature="shouldDeleteByDomainEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByDomainEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fifth.domain" ip: "255.255.255.255"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByDomainEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByIpEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByIpEntry" duration-ms="2" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fourth.domain" ip: "0.0.0.0"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByIpEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByIpEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByIpEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "first.domain" ip: "192.168.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByIpEntry -->
+        <test-method status="PASS" signature="shouldDeleteByIpEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByIpEntry" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "second.domain" ip: "192.168.0.2"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByIpEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByIpEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByIpEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "third.domain" ip: "10.0.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByIpEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldDeleteByIpEntry(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldDeleteByIpEntry" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fifth.domain" ip: "255.255.255.255"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteByIpEntry -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="2" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldReturnSortedEntries(java.util.List,java.util.List)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldReturnSortedEntries" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="unsortedWithExpected" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[domain: "third.domain" ip: "192.168.0.3", domain: "first.domain" ip: "192.168.0.1", domain: "second.domain" ip: "192.168.0.2"]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[domain: "first.domain" ip: "192.168.0.1", domain: "second.domain" ip: "192.168.0.2", domain: "third.domain" ip: "192.168.0.3"]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnSortedEntries -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenAddingSameDomain(java.lang.String)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenAddingSameDomain" duration-ms="3" started-at="2026-08-20T23:14:12 CEST" data-provider="validDomains" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first.domain]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAddingSameDomain -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenAddingSameDomain(java.lang.String)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenAddingSameDomain" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validDomains" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[second.domain]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAddingSameDomain -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenAddingSameDomain(java.lang.String)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenAddingSameDomain" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validDomains" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[third.notadomain]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAddingSameDomain -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenAddingSameIP(java.lang.String)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenAddingSameIP" duration-ms="2" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[192.168.0.1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAddingSameIP -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenAddingSameIP(java.lang.String)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenAddingSameIP" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAddingSameIP -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenAddingSameIP(java.lang.String)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenAddingSameIP" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="validIPs" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[255.255.255.255]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAddingSameIP -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenDomainIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenDomainIsInvalid" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidDomainEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "" ip: "192.168.0.1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenDomainIsInvalid -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenDomainIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenDomainIsInvalid" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidDomainEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "null" ip: "192.168.0.2"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenDomainIsInvalid -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenIPIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenIPIsInvalid" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "first.domain" ip: "01.1.1.001"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenIPIsInvalid -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenIPIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenIPIsInvalid" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "second.domain" ip: "256.255.255.255"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenIPIsInvalid -->
+        <test-method status="PASS" signature="shouldThrowWhenIPIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenIPIsInvalid" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "third.domain" ip: "null"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenIPIsInvalid -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldThrowWhenIPIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenIPIsInvalid" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fourth.domain" ip: "0...0..0"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenIPIsInvalid -->
+        <test-method status="PASS" signature="shouldThrowWhenIPIsInvalid(org.example.sftpclient.model.DomainEntry)[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="shouldThrowWhenIPIsInvalid" duration-ms="1" started-at="2026-08-20T23:14:12 CEST" data-provider="invalidIPEntries" finished-at="2026-08-20T23:14:12 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[domain: "fifth.domain" ip: ""]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenIPIsInvalid -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.sftpclient.service.DomainEntryServiceTest@26f67b76]" name="setUp" is-config="true" duration-ms="0" started-at="2026-08-20T23:14:12 CEST" finished-at="2026-08-20T23:14:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- org.example.sftpclient.service.DomainEntryServiceTest -->
+    </test> <!-- UnitTests -->
+  </suite> <!-- SftpClientTestSuite -->
+</testng-results>

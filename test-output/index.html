@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SftpClientTestSuite">
+              <span class="suite-name border-passed">SftpClientTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SftpClientTestSuite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SftpClientTestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SftpClientTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SftpClientTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SftpClientTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SftpClientTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SftpClientTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods,   43 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SftpClientTestSuite" class="hide-methods passed suite-SftpClientTestSuite"> (hide)</a> <!-- hide-methods passed suite-SftpClientTestSuite -->
+                      <a href="#" panel-name="suite-SftpClientTestSuite" class="show-methods passed suite-SftpClientTestSuite"> (show)</a> <!-- show-methods passed suite-SftpClientTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SftpClientTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldAddAValidEntry(domain: &quot;fifth.domain&quot; ip: &quot;255.255.255.255&quot;)">shouldAddAValidEntry(domain: "fifth.domain" ip: "255.255.255.255")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldAddAValidEntry(domain: &quot;third.domain&quot; ip: &quot;10.0.0.1&quot;)">shouldAddAValidEntry(domain: "third.domain" ip: "10.0.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldAddAValidEntry(domain: &quot;second.domain&quot; ip: &quot;192.168.0.2&quot;)">shouldAddAValidEntry(domain: "second.domain" ip: "192.168.0.2")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldAddAValidEntry(domain: &quot;fourth.domain&quot; ip: &quot;0.0.0.0&quot;)">shouldAddAValidEntry(domain: "fourth.domain" ip: "0.0.0.0")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldAddAValidEntry(domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;)">shouldAddAValidEntry(domain: "first.domain" ip: "192.168.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByDomainEntry(domain: &quot;fifth.domain&quot; ip: &quot;255.255.255.255&quot;)">shouldDeleteByDomainEntry(domain: "fifth.domain" ip: "255.255.255.255")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByDomainEntry(domain: &quot;third.domain&quot; ip: &quot;10.0.0.1&quot;)">shouldDeleteByDomainEntry(domain: "third.domain" ip: "10.0.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByDomainEntry(domain: &quot;second.domain&quot; ip: &quot;192.168.0.2&quot;)">shouldDeleteByDomainEntry(domain: "second.domain" ip: "192.168.0.2")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByDomainEntry(domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;)">shouldDeleteByDomainEntry(domain: "first.domain" ip: "192.168.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByDomainEntry(domain: &quot;fourth.domain&quot; ip: &quot;0.0.0.0&quot;)">shouldDeleteByDomainEntry(domain: "fourth.domain" ip: "0.0.0.0")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByIpEntry(domain: &quot;fifth.domain&quot; ip: &quot;255.255.255.255&quot;)">shouldDeleteByIpEntry(domain: "fifth.domain" ip: "255.255.255.255")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByIpEntry(domain: &quot;third.domain&quot; ip: &quot;10.0.0.1&quot;)">shouldDeleteByIpEntry(domain: "third.domain" ip: "10.0.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByIpEntry(domain: &quot;fourth.domain&quot; ip: &quot;0.0.0.0&quot;)">shouldDeleteByIpEntry(domain: "fourth.domain" ip: "0.0.0.0")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByIpEntry(domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;)">shouldDeleteByIpEntry(domain: "first.domain" ip: "192.168.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldDeleteByIpEntry(domain: &quot;second.domain&quot; ip: &quot;192.168.0.2&quot;)">shouldDeleteByIpEntry(domain: "second.domain" ip: "192.168.0.2")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.json.MinimalJsonRoundTripTest" hash-for-method="shouldDoTheRoundTrip">shouldDoTheRoundTrip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.json.MinimalJsonParserTest" hash-for-method="shouldParseValidJsonIntoEntries">shouldParseValidJsonIntoEntries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnFalseForInvalidIPs(.0.0.0.0)">shouldReturnFalseForInvalidIPs(.0.0.0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnFalseForInvalidIPs()">shouldReturnFalseForInvalidIPs()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnFalseForInvalidIPs(256.0.0.0)">shouldReturnFalseForInvalidIPs(256.0.0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnFalseForInvalidIPs(0..0.0.0)">shouldReturnFalseForInvalidIPs(0..0.0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnFalseForInvalidIPs(null)">shouldReturnFalseForInvalidIPs(null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnFalseForInvalidIPs(in.va.li.d)">shouldReturnFalseForInvalidIPs(in.va.li.d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldReturnSortedEntries([domain: &quot;third.domain&quot; ip: &quot;192.168.0.3&quot;, domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;, domain: &quot;second...)">shouldReturnSortedEntries([domain: "third.domain" ip: "192.168.0.3", domain: "first.domain" ip: "192.168.0.1", domain: "second...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnTrueForValidIPs(255.255.255.255)">shouldReturnTrueForValidIPs(255.255.255.255)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnTrueForValidIPs(192.168.0.1)">shouldReturnTrueForValidIPs(192.168.0.1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnTrueForValidIPs(255.254.254.255)">shouldReturnTrueForValidIPs(255.254.254.255)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnTrueForValidIPs(139.94.64.95)">shouldReturnTrueForValidIPs(139.94.64.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.validator.IPValidatorTest" hash-for-method="shouldReturnTrueForValidIPs(0.0.0.0)">shouldReturnTrueForValidIPs(0.0.0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenAddingSameDomain(first.domain)">shouldThrowWhenAddingSameDomain(first.domain)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenAddingSameDomain(second.domain)">shouldThrowWhenAddingSameDomain(second.domain)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenAddingSameDomain(third.notadomain)">shouldThrowWhenAddingSameDomain(third.notadomain)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenAddingSameIP(0.0.0.0)">shouldThrowWhenAddingSameIP(0.0.0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenAddingSameIP(192.168.0.1)">shouldThrowWhenAddingSameIP(192.168.0.1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenAddingSameIP(255.255.255.255)">shouldThrowWhenAddingSameIP(255.255.255.255)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenDomainIsInvalid(domain: &quot;null&quot; ip: &quot;192.168.0.2&quot;)">shouldThrowWhenDomainIsInvalid(domain: "null" ip: "192.168.0.2")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenDomainIsInvalid(domain: &quot;&quot; ip: &quot;192.168.0.1&quot;)">shouldThrowWhenDomainIsInvalid(domain: "" ip: "192.168.0.1")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenIPIsInvalid(domain: &quot;third.domain&quot; ip: &quot;null&quot;)">shouldThrowWhenIPIsInvalid(domain: "third.domain" ip: "null")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenIPIsInvalid(domain: &quot;fourth.domain&quot; ip: &quot;0...0..0&quot;)">shouldThrowWhenIPIsInvalid(domain: "fourth.domain" ip: "0...0..0")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenIPIsInvalid(domain: &quot;first.domain&quot; ip: &quot;01.1.1.001&quot;)">shouldThrowWhenIPIsInvalid(domain: "first.domain" ip: "01.1.1.001")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenIPIsInvalid(domain: &quot;second.domain&quot; ip: &quot;256.255.255.255&quot;)">shouldThrowWhenIPIsInvalid(domain: "second.domain" ip: "256.255.255.255")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.service.DomainEntryServiceTest" hash-for-method="shouldThrowWhenIPIsInvalid(domain: &quot;fifth.domain&quot; ip: &quot;&quot;)">shouldThrowWhenIPIsInvalid(domain: "fifth.domain" ip: "")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SftpClientTestSuite" title="org.example.sftpclient.json.MinimalJsonWriterTest" hash-for-method="shouldWriteAValidJson">shouldWriteAValidJson</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SftpClientTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SftpClientTestSuite" class="panel SftpClientTestSuite">
+          <div class="suite-SftpClientTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.sftpclient.json.MinimalJsonParserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldParseValidJsonIntoEntries">
+                  </a> <!-- shouldParseValidJsonIntoEntries -->
+                  <span class="method-name">shouldParseValidJsonIntoEntries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SftpClientTestSuite-class-passed -->
+          <div class="suite-SftpClientTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.sftpclient.json.MinimalJsonWriterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldWriteAValidJson">
+                  </a> <!-- shouldWriteAValidJson -->
+                  <span class="method-name">shouldWriteAValidJson</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SftpClientTestSuite-class-passed -->
+          <div class="suite-SftpClientTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.sftpclient.service.DomainEntryServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddAValidEntry(domain: &quot;fifth.domain&quot; ip: &quot;255.255.255.255&quot;)">
+                  </a> <!-- shouldAddAValidEntry(domain: "fifth.domain" ip: "255.255.255.255") -->
+                  <span class="method-name">shouldAddAValidEntry</span>
+                  <span class="parameters">(domain: "fifth.domain" ip: "255.255.255.255")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddAValidEntry(domain: &quot;third.domain&quot; ip: &quot;10.0.0.1&quot;)">
+                  </a> <!-- shouldAddAValidEntry(domain: "third.domain" ip: "10.0.0.1") -->
+                  <span class="method-name">shouldAddAValidEntry</span>
+                  <span class="parameters">(domain: "third.domain" ip: "10.0.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddAValidEntry(domain: &quot;second.domain&quot; ip: &quot;192.168.0.2&quot;)">
+                  </a> <!-- shouldAddAValidEntry(domain: "second.domain" ip: "192.168.0.2") -->
+                  <span class="method-name">shouldAddAValidEntry</span>
+                  <span class="parameters">(domain: "second.domain" ip: "192.168.0.2")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddAValidEntry(domain: &quot;fourth.domain&quot; ip: &quot;0.0.0.0&quot;)">
+                  </a> <!-- shouldAddAValidEntry(domain: "fourth.domain" ip: "0.0.0.0") -->
+                  <span class="method-name">shouldAddAValidEntry</span>
+                  <span class="parameters">(domain: "fourth.domain" ip: "0.0.0.0")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddAValidEntry(domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;)">
+                  </a> <!-- shouldAddAValidEntry(domain: "first.domain" ip: "192.168.0.1") -->
+                  <span class="method-name">shouldAddAValidEntry</span>
+                  <span class="parameters">(domain: "first.domain" ip: "192.168.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByDomainEntry(domain: &quot;fifth.domain&quot; ip: &quot;255.255.255.255&quot;)">
+                  </a> <!-- shouldDeleteByDomainEntry(domain: "fifth.domain" ip: "255.255.255.255") -->
+                  <span class="method-name">shouldDeleteByDomainEntry</span>
+                  <span class="parameters">(domain: "fifth.domain" ip: "255.255.255.255")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByDomainEntry(domain: &quot;third.domain&quot; ip: &quot;10.0.0.1&quot;)">
+                  </a> <!-- shouldDeleteByDomainEntry(domain: "third.domain" ip: "10.0.0.1") -->
+                  <span class="method-name">shouldDeleteByDomainEntry</span>
+                  <span class="parameters">(domain: "third.domain" ip: "10.0.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByDomainEntry(domain: &quot;second.domain&quot; ip: &quot;192.168.0.2&quot;)">
+                  </a> <!-- shouldDeleteByDomainEntry(domain: "second.domain" ip: "192.168.0.2") -->
+                  <span class="method-name">shouldDeleteByDomainEntry</span>
+                  <span class="parameters">(domain: "second.domain" ip: "192.168.0.2")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByDomainEntry(domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;)">
+                  </a> <!-- shouldDeleteByDomainEntry(domain: "first.domain" ip: "192.168.0.1") -->
+                  <span class="method-name">shouldDeleteByDomainEntry</span>
+                  <span class="parameters">(domain: "first.domain" ip: "192.168.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByDomainEntry(domain: &quot;fourth.domain&quot; ip: &quot;0.0.0.0&quot;)">
+                  </a> <!-- shouldDeleteByDomainEntry(domain: "fourth.domain" ip: "0.0.0.0") -->
+                  <span class="method-name">shouldDeleteByDomainEntry</span>
+                  <span class="parameters">(domain: "fourth.domain" ip: "0.0.0.0")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByIpEntry(domain: &quot;fifth.domain&quot; ip: &quot;255.255.255.255&quot;)">
+                  </a> <!-- shouldDeleteByIpEntry(domain: "fifth.domain" ip: "255.255.255.255") -->
+                  <span class="method-name">shouldDeleteByIpEntry</span>
+                  <span class="parameters">(domain: "fifth.domain" ip: "255.255.255.255")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByIpEntry(domain: &quot;third.domain&quot; ip: &quot;10.0.0.1&quot;)">
+                  </a> <!-- shouldDeleteByIpEntry(domain: "third.domain" ip: "10.0.0.1") -->
+                  <span class="method-name">shouldDeleteByIpEntry</span>
+                  <span class="parameters">(domain: "third.domain" ip: "10.0.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByIpEntry(domain: &quot;fourth.domain&quot; ip: &quot;0.0.0.0&quot;)">
+                  </a> <!-- shouldDeleteByIpEntry(domain: "fourth.domain" ip: "0.0.0.0") -->
+                  <span class="method-name">shouldDeleteByIpEntry</span>
+                  <span class="parameters">(domain: "fourth.domain" ip: "0.0.0.0")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByIpEntry(domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;)">
+                  </a> <!-- shouldDeleteByIpEntry(domain: "first.domain" ip: "192.168.0.1") -->
+                  <span class="method-name">shouldDeleteByIpEntry</span>
+                  <span class="parameters">(domain: "first.domain" ip: "192.168.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteByIpEntry(domain: &quot;second.domain&quot; ip: &quot;192.168.0.2&quot;)">
+                  </a> <!-- shouldDeleteByIpEntry(domain: "second.domain" ip: "192.168.0.2") -->
+                  <span class="method-name">shouldDeleteByIpEntry</span>
+                  <span class="parameters">(domain: "second.domain" ip: "192.168.0.2")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnSortedEntries([domain: &quot;third.domain&quot; ip: &quot;192.168.0.3&quot;, domain: &quot;first.domain&quot; ip: &quot;192.168.0.1&quot;, domain: &quot;second...)">
+                  </a> <!-- shouldReturnSortedEntries([domain: "third.domain" ip: "192.168.0.3", domain: "first.domain" ip: "192.168.0.1", domain: "second...) -->
+                  <span class="method-name">shouldReturnSortedEntries</span>
+                  <span class="parameters">([domain: "third.domain" ip: "192.168.0.3", domain: "first.domain" ip: "192.168.0.1", domain: "second.domain" ip: "192.168.0.2"], [domain: "first.domain" ip: "192.168.0.1", domain: "second.domain" ip: "192.168.0.2", domain: "third.domain" ip: "192.168.0.3"])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenAddingSameDomain(first.domain)">
+                  </a> <!-- shouldThrowWhenAddingSameDomain(first.domain) -->
+                  <span class="method-name">shouldThrowWhenAddingSameDomain</span>
+                  <span class="parameters">(first.domain)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenAddingSameDomain(second.domain)">
+                  </a> <!-- shouldThrowWhenAddingSameDomain(second.domain) -->
+                  <span class="method-name">shouldThrowWhenAddingSameDomain</span>
+                  <span class="parameters">(second.domain)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenAddingSameDomain(third.notadomain)">
+                  </a> <!-- shouldThrowWhenAddingSameDomain(third.notadomain) -->
+                  <span class="method-name">shouldThrowWhenAddingSameDomain</span>
+                  <span class="parameters">(third.notadomain)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenAddingSameIP(0.0.0.0)">
+                  </a> <!-- shouldThrowWhenAddingSameIP(0.0.0.0) -->
+                  <span class="method-name">shouldThrowWhenAddingSameIP</span>
+                  <span class="parameters">(0.0.0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenAddingSameIP(192.168.0.1)">
+                  </a> <!-- shouldThrowWhenAddingSameIP(192.168.0.1) -->
+                  <span class="method-name">shouldThrowWhenAddingSameIP</span>
+                  <span class="parameters">(192.168.0.1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenAddingSameIP(255.255.255.255)">
+                  </a> <!-- shouldThrowWhenAddingSameIP(255.255.255.255) -->
+                  <span class="method-name">shouldThrowWhenAddingSameIP</span>
+                  <span class="parameters">(255.255.255.255)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenDomainIsInvalid(domain: &quot;null&quot; ip: &quot;192.168.0.2&quot;)">
+                  </a> <!-- shouldThrowWhenDomainIsInvalid(domain: "null" ip: "192.168.0.2") -->
+                  <span class="method-name">shouldThrowWhenDomainIsInvalid</span>
+                  <span class="parameters">(domain: "null" ip: "192.168.0.2")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenDomainIsInvalid(domain: &quot;&quot; ip: &quot;192.168.0.1&quot;)">
+                  </a> <!-- shouldThrowWhenDomainIsInvalid(domain: "" ip: "192.168.0.1") -->
+                  <span class="method-name">shouldThrowWhenDomainIsInvalid</span>
+                  <span class="parameters">(domain: "" ip: "192.168.0.1")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenIPIsInvalid(domain: &quot;third.domain&quot; ip: &quot;null&quot;)">
+                  </a> <!-- shouldThrowWhenIPIsInvalid(domain: "third.domain" ip: "null") -->
+                  <span class="method-name">shouldThrowWhenIPIsInvalid</span>
+                  <span class="parameters">(domain: "third.domain" ip: "null")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenIPIsInvalid(domain: &quot;fourth.domain&quot; ip: &quot;0...0..0&quot;)">
+                  </a> <!-- shouldThrowWhenIPIsInvalid(domain: "fourth.domain" ip: "0...0..0") -->
+                  <span class="method-name">shouldThrowWhenIPIsInvalid</span>
+                  <span class="parameters">(domain: "fourth.domain" ip: "0...0..0")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenIPIsInvalid(domain: &quot;first.domain&quot; ip: &quot;01.1.1.001&quot;)">
+                  </a> <!-- shouldThrowWhenIPIsInvalid(domain: "first.domain" ip: "01.1.1.001") -->
+                  <span class="method-name">shouldThrowWhenIPIsInvalid</span>
+                  <span class="parameters">(domain: "first.domain" ip: "01.1.1.001")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenIPIsInvalid(domain: &quot;second.domain&quot; ip: &quot;256.255.255.255&quot;)">
+                  </a> <!-- shouldThrowWhenIPIsInvalid(domain: "second.domain" ip: "256.255.255.255") -->
+                  <span class="method-name">shouldThrowWhenIPIsInvalid</span>
+                  <span class="parameters">(domain: "second.domain" ip: "256.255.255.255")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldThrowWhenIPIsInvalid(domain: &quot;fifth.domain&quot; ip: &quot;&quot;)">
+                  </a> <!-- shouldThrowWhenIPIsInvalid(domain: "fifth.domain" ip: "") -->
+                  <span class="method-name">shouldThrowWhenIPIsInvalid</span>
+                  <span class="parameters">(domain: "fifth.domain" ip: "")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SftpClientTestSuite-class-passed -->
+          <div class="suite-SftpClientTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.sftpclient.json.MinimalJsonRoundTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDoTheRoundTrip">
+                  </a> <!-- shouldDoTheRoundTrip -->
+                  <span class="method-name">shouldDoTheRoundTrip</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SftpClientTestSuite-class-passed -->
+          <div class="suite-SftpClientTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.sftpclient.validator.IPValidatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnFalseForInvalidIPs(.0.0.0.0)">
+                  </a> <!-- shouldReturnFalseForInvalidIPs(.0.0.0.0) -->
+                  <span class="method-name">shouldReturnFalseForInvalidIPs</span>
+                  <span class="parameters">(.0.0.0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnFalseForInvalidIPs()">
+                  </a> <!-- shouldReturnFalseForInvalidIPs() -->
+                  <span class="method-name">shouldReturnFalseForInvalidIPs</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnFalseForInvalidIPs(256.0.0.0)">
+                  </a> <!-- shouldReturnFalseForInvalidIPs(256.0.0.0) -->
+                  <span class="method-name">shouldReturnFalseForInvalidIPs</span>
+                  <span class="parameters">(256.0.0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnFalseForInvalidIPs(0..0.0.0)">
+                  </a> <!-- shouldReturnFalseForInvalidIPs(0..0.0.0) -->
+                  <span class="method-name">shouldReturnFalseForInvalidIPs</span>
+                  <span class="parameters">(0..0.0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnFalseForInvalidIPs(null)">
+                  </a> <!-- shouldReturnFalseForInvalidIPs(null) -->
+                  <span class="method-name">shouldReturnFalseForInvalidIPs</span>
+                  <span class="parameters">(null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnFalseForInvalidIPs(in.va.li.d)">
+                  </a> <!-- shouldReturnFalseForInvalidIPs(in.va.li.d) -->
+                  <span class="method-name">shouldReturnFalseForInvalidIPs</span>
+                  <span class="parameters">(in.va.li.d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnTrueForValidIPs(255.255.255.255)">
+                  </a> <!-- shouldReturnTrueForValidIPs(255.255.255.255) -->
+                  <span class="method-name">shouldReturnTrueForValidIPs</span>
+                  <span class="parameters">(255.255.255.255)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnTrueForValidIPs(192.168.0.1)">
+                  </a> <!-- shouldReturnTrueForValidIPs(192.168.0.1) -->
+                  <span class="method-name">shouldReturnTrueForValidIPs</span>
+                  <span class="parameters">(192.168.0.1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnTrueForValidIPs(255.254.254.255)">
+                  </a> <!-- shouldReturnTrueForValidIPs(255.254.254.255) -->
+                  <span class="method-name">shouldReturnTrueForValidIPs</span>
+                  <span class="parameters">(255.254.254.255)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnTrueForValidIPs(139.94.64.95)">
+                  </a> <!-- shouldReturnTrueForValidIPs(139.94.64.95) -->
+                  <span class="method-name">shouldReturnTrueForValidIPs</span>
+                  <span class="parameters">(139.94.64.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnTrueForValidIPs(0.0.0.0)">
+                  </a> <!-- shouldReturnTrueForValidIPs(0.0.0.0) -->
+                  <span class="method-name">shouldReturnTrueForValidIPs</span>
+                  <span class="parameters">(0.0.0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SftpClientTestSuite-class-passed -->
+        </div> <!-- panel SftpClientTestSuite -->
+        <div panel-name="test-xml-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/opt/SFTP-client/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SftpClientTestSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UnitTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.sftpclient.service.DomainEntryServiceTest&quot;/&gt;
+      &lt;class name=&quot;org.example.sftpclient.json.MinimalJsonParserTest&quot;/&gt;
+      &lt;class name=&quot;org.example.sftpclient.json.MinimalJsonWriterTest&quot;/&gt;
+      &lt;class name=&quot;org.example.sftpclient.json.MinimalJsonRoundTripTest&quot;/&gt;
+      &lt;class name=&quot;org.example.sftpclient.validator.IPValidatorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UnitTests --&gt;
+&lt;/suite&gt; &lt;!-- SftpClientTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SftpClientTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UnitTests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SftpClientTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SftpClientTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SftpClientTestSuite');
+function tableData_SftpClientTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'shouldParseValidJsonIntoEntries')
+data.setCell(0, 2, 'org.example.sftpclient.json.MinimalJsonParserTest')
+data.setCell(0, 3, 7);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'shouldAddAValidEntry')
+data.setCell(1, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(1, 3, 6);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shouldThrowWhenAddingSameDomain')
+data.setCell(2, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(2, 3, 3);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'shouldDeleteByDomainEntry')
+data.setCell(3, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(3, 3, 3);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'shouldDoTheRoundTrip')
+data.setCell(4, 2, 'org.example.sftpclient.json.MinimalJsonRoundTripTest')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldDeleteByIpEntry')
+data.setCell(5, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldThrowWhenAddingSameIP')
+data.setCell(6, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'shouldThrowWhenIPIsInvalid')
+data.setCell(7, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'shouldThrowWhenIPIsInvalid')
+data.setCell(8, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'shouldThrowWhenDomainIsInvalid')
+data.setCell(9, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'shouldWriteAValidJson')
+data.setCell(10, 2, 'org.example.sftpclient.json.MinimalJsonWriterTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'shouldReturnTrueForValidIPs')
+data.setCell(11, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'shouldThrowWhenIPIsInvalid')
+data.setCell(12, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'shouldThrowWhenAddingSameDomain')
+data.setCell(13, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'shouldReturnTrueForValidIPs')
+data.setCell(14, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'shouldDeleteByDomainEntry')
+data.setCell(15, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'shouldReturnSortedEntries')
+data.setCell(16, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'shouldDeleteByIpEntry')
+data.setCell(17, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'shouldThrowWhenAddingSameIP')
+data.setCell(18, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'shouldThrowWhenAddingSameDomain')
+data.setCell(19, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'shouldReturnFalseForInvalidIPs')
+data.setCell(20, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'shouldAddAValidEntry')
+data.setCell(21, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'shouldDeleteByIpEntry')
+data.setCell(22, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'shouldThrowWhenIPIsInvalid')
+data.setCell(23, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'shouldThrowWhenDomainIsInvalid')
+data.setCell(24, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'shouldAddAValidEntry')
+data.setCell(25, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'shouldReturnFalseForInvalidIPs')
+data.setCell(26, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'shouldThrowWhenIPIsInvalid')
+data.setCell(27, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'shouldDeleteByDomainEntry')
+data.setCell(28, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'shouldAddAValidEntry')
+data.setCell(29, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'shouldAddAValidEntry')
+data.setCell(30, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'shouldReturnFalseForInvalidIPs')
+data.setCell(31, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'shouldDeleteByDomainEntry')
+data.setCell(32, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'shouldDeleteByIpEntry')
+data.setCell(33, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'shouldThrowWhenAddingSameIP')
+data.setCell(34, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'shouldReturnTrueForValidIPs')
+data.setCell(35, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'shouldDeleteByDomainEntry')
+data.setCell(36, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'shouldReturnTrueForValidIPs')
+data.setCell(37, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'shouldDeleteByIpEntry')
+data.setCell(38, 2, 'org.example.sftpclient.service.DomainEntryServiceTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'shouldReturnFalseForInvalidIPs')
+data.setCell(39, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'shouldReturnTrueForValidIPs')
+data.setCell(40, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'shouldReturnFalseForInvalidIPs')
+data.setCell(41, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'shouldReturnFalseForInvalidIPs')
+data.setCell(42, 2, 'org.example.sftpclient.validator.IPValidatorTest')
+data.setCell(42, 3, 0);
+window.suiteTableData['SftpClientTestSuite']= { tableData: data, tableDiv: 'times-div-SftpClientTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 ms</span>
+              <div id="times-div-SftpClientTestSuite">
+              </div> <!-- times-div-SftpClientTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SftpClientTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SftpClientTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.sftpclient.service.DomainEntryServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldAddAValidEntry(domain: "fourth.domain" ip: "0.0.0.0")</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldAddAValidEntry(domain: "first.domain" ip: "192.168.0.1")</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldAddAValidEntry(domain: "second.domain" ip: "192.168.0.2")</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAddAValidEntry(domain: "third.domain" ip: "10.0.0.1")</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAddAValidEntry(domain: "fifth.domain" ip: "255.255.255.255")</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByDomainEntry(domain: "fourth.domain" ip: "0.0.0.0")</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByDomainEntry(domain: "first.domain" ip: "192.168.0.1")</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByDomainEntry(domain: "second.domain" ip: "192.168.0.2")</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByDomainEntry(domain: "third.domain" ip: "10.0.0.1")</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByDomainEntry(domain: "fifth.domain" ip: "255.255.255.255")</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByIpEntry(domain: "fourth.domain" ip: "0.0.0.0")</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByIpEntry(domain: "first.domain" ip: "192.168.0.1")</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByIpEntry(domain: "second.domain" ip: "192.168.0.2")</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByIpEntry(domain: "third.domain" ip: "10.0.0.1")</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldDeleteByIpEntry(domain: "fifth.domain" ip: "255.255.255.255")</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnSortedEntries([domain: "third.domain" ip: "192.168.0.3", domain: "first.domain" ip: "192.168.0.1", domain: "second...)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenAddingSameDomain(first.domain)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenAddingSameDomain(second.domain)</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenAddingSameDomain(third.notadomain)</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenAddingSameIP(192.168.0.1)</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenAddingSameIP(0.0.0.0)</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenAddingSameIP(255.255.255.255)</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenDomainIsInvalid(domain: "" ip: "192.168.0.1")</span>
+                <span class="method-start">80 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenDomainIsInvalid(domain: "null" ip: "192.168.0.2")</span>
+                <span class="method-start">82 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenIPIsInvalid(domain: "first.domain" ip: "01.1.1.001")</span>
+                <span class="method-start">85 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">87 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenIPIsInvalid(domain: "second.domain" ip: "256.255.255.255")</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenIPIsInvalid(domain: "third.domain" ip: "null")</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenIPIsInvalid(domain: "fourth.domain" ip: "0...0..0")</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowWhenIPIsInvalid(domain: "fifth.domain" ip: "")</span>
+                <span class="method-start">92 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">92 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.sftpclient.json.MinimalJsonParserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldParseValidJsonIntoEntries</span>
+                <span class="method-start">98 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.sftpclient.json.MinimalJsonWriterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldWriteAValidJson</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.sftpclient.json.MinimalJsonRoundTripTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldDoTheRoundTrip</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.sftpclient.validator.IPValidatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnFalseForInvalidIPs(256.0.0.0)</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnFalseForInvalidIPs(.0.0.0.0)</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnFalseForInvalidIPs(0..0.0.0)</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnFalseForInvalidIPs(in.va.li.d)</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnFalseForInvalidIPs(null)</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnFalseForInvalidIPs()</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnTrueForValidIPs(192.168.0.1)</span>
+                <span class="method-start">117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnTrueForValidIPs(255.255.255.255)</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnTrueForValidIPs(0.0.0.0)</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnTrueForValidIPs(255.254.254.255)</span>
+                <span class="method-start">119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnTrueForValidIPs(139.94.64.95)</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -15,6 +15,19 @@ repositories {
 dependencies {
     implementation project(':client')
     implementation 'org.testng:testng:7.5'
+    testImplementation 'org.testng:testng:7.5'
+}
+
+sourceSets {
+    main {
+        runtimeClasspath += test.output
+    }
+}
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
 }
 
 jar {
@@ -24,11 +37,6 @@ jar {
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
+    from sourceSets.test.output
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-test {
-    useTestNG() {
-        suites 'src/test/resources/testng.xml'
-    }
 }
