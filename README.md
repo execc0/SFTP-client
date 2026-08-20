@@ -1,4 +1,6 @@
 # SFTP Domain Client
+[SFTP-client](https://github.com/execc0/SFTP-client) 
+
 
 Консольный клиент для работы с SFTP-сервером: получение, добавление и удаление пар "домен — IP" из JSON-файла.
 
