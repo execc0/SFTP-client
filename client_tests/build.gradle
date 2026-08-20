@@ -17,8 +17,18 @@ dependencies {
     implementation 'org.testng:testng:7.5'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.sftpclient.runner.TestRunner'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 test {
     useTestNG() {
-        suites 'testng.xml'
+        suites 'src/test/resources/testng.xml'
     }
 }
