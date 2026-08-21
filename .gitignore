@@ -4,6 +4,8 @@ build/
 !client/src/main/**/build/
 !client/src/test/**/build/
 !sftp_data/addresses/addresses.json
+.idea/
+test-output/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
