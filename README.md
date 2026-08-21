@@ -24,7 +24,7 @@ docker compose up -d
 | host | `localhost` |
 | port | `2222` |
 | login | `sftpuser` |
-| password | `sftppass` |
+| password | `password` |
 | путь к файлу | `upload/addresses.json` |
 
 Файл `sftp-data/addresses/addresses.json` уже лежит в репозитории и монтируется в контейнер автоматически.
