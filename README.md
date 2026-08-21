@@ -31,7 +31,7 @@ docker compose up -d
 
 На Linux перед первым запуском может понадобиться выставить права на файл, чтобы SFTP-пользователь внутри контейнера мог не только читать, но и перезаписывать файл (нужно для операций добавления/удаления пар):
 ```bash
-chmod 666 sftp-data/addresses/addresses.json
+chmod 666 sftp_data/addresses/addresses.json
 ```
 Без этого запись в файл падать с ошибкой Permission denied.
 
